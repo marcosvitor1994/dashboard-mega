@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
-Dashboard BrasilSeg - Itens Pessoais
+Dashboard Mega da Virada 2025
 
 ## Equipe
 
-Equipe de BI massiva - Nacional
+Equipe de BI - Binder
 
