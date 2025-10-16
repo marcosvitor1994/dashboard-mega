@@ -125,7 +125,7 @@ const Capa: React.FC = () => {
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute bottom-0 left-0 right-0 p-4">
             <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
-              <h1 className="text-2xl font-bold text-gray-900 mb-1">Dashboard BrasilSeg - Campanha ITENS PESSOAIS</h1>
+              <h1 className="text-2xl font-bold text-gray-900 mb-1">Dashboard Mega da Virada - 2025</h1>
               <p className="text-base text-gray-700">
                 Informações sobre a campanha, objetivos e público-alvo.
               </p>
@@ -147,15 +147,15 @@ const Capa: React.FC = () => {
               <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
               <div>
                 <p className="font-semibold text-gray-900 text-sm">Campanha:</p>
-                <p className="text-gray-700 text-sm">BrasilSeg - Itens Pessoais</p>
+                <p className="text-gray-700 text-sm">Mega da Virada 2025</p>
               </div>
             </div>
             
             <div className="flex items-start space-x-3">
               <User className="w-3 h-3 text-purple-600 mt-1" />
               <div>
-                <p className="font-semibold text-gray-900 text-sm">Clientes:</p>
-                <p className="text-gray-700 text-sm">Andrea e Luciana</p>
+                <p className="font-semibold text-gray-900 text-sm">Assessores:</p>
+                <p className="text-gray-700 text-sm">XXX e YYY</p>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ const Capa: React.FC = () => {
               <Users className="w-3 h-3 text-orange-600 mt-1" />
               <div>
                 <p className="font-semibold text-gray-900 text-sm">Público Alvo:</p>
-                <p className="text-gray-700 text-sm">AS ABC 25+</p>
+                <p className="text-gray-700 text-sm">AS 18+</p>
               </div>
             </div>            
             <div className="flex items-start space-x-3">
@@ -180,6 +180,8 @@ const Capa: React.FC = () => {
               <div>
                 <p className="font-semibold text-gray-900 text-sm">Objetivo de Mídia:</p>
                 <p className="text-gray-700 text-sm">Alcance</p>
+                <p className="text-gray-700 text-sm">Consideração</p>
+                <p className="text-gray-700 text-sm">Conversão</p>
               </div>
             </div>
           </div>

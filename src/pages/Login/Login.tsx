@@ -37,10 +37,10 @@ const Login: React.FC = () => {
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
               <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center">
-                <BarChart3 className="w-8 h-8 text-white" />
+                <img src="/trevo.png" alt="Logo" className="w-8 h-8" />
               </div>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">Dashboard BrasilSeg - Itens Pessoais</h1>
+            <h1 className="text-2xl font-bold text-gray-900 mb-2">Dashboard Mega da Virada 2025</h1>
             <p className="text-gray-600">Faça login para acessar o sistema</p>
           </div>
 

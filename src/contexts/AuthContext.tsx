@@ -37,16 +37,12 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 // Emails específicos autorizados
 const AUTHORIZED_EMAILS = [
-  "diogo.bobsin@gmail.com",
-  "thailima@brasilseg.com.br"
+  "marcosvitor1994@gmail.com"
 ]
 
 
 const AUTHORIZED_DOMAINS = [
-  "naccom.com.br",
-  "bb.com.br",
-  "brasilseg.com.br",
-
+  "binder.com.br",
 ]
 
 // Função para verificar se o email está autorizado
