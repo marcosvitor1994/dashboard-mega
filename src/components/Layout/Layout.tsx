@@ -16,7 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }}
       >
         {/* Overlay para melhorar a legibilidade */}
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
       </div>
 
       {/* Sidebar */}
