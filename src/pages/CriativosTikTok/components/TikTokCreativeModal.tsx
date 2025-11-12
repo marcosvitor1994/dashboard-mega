@@ -265,6 +265,7 @@ const TikTokCreativeModal: React.FC<TikTokCreativeModalProps> = ({ creative, isO
                     {creative.mediaUrl ? (
                       <iframe
                         src={creative.mediaUrl}
+                        title={`TikTok Ad - ${creative.adName}`}
                         className="w-full h-full"
                         frameBorder="0"
                         allow="autoplay; encrypted-media"

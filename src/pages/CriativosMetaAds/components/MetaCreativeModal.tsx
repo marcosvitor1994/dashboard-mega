@@ -245,6 +245,7 @@ const MetaCreativeModal: React.FC<MetaCreativeModalProps> = ({ creative, isOpen,
                   <div className="relative w-full h-full">
                     <iframe
                       src={creative.mediaUrl}
+                      title={`Meta Ad Creative - ${creative.creativeTitle}`}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="autoplay; encrypted-media"

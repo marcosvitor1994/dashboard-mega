@@ -46,7 +46,7 @@ const VisaoGeral: React.FC = () => {
   const [selectedPracas, setSelectedPracas] = useState<string[]>([])
 
   // Cores para as plataformas
-  const platformColors: Record<string, string> = {
+  const platformColors: Record<string, string> = useMemo(() => ({
     Google: "#4285f4",
     Meta: "#0668E1",
     TikTok: "#ff0050",
@@ -57,7 +57,7 @@ const VisaoGeral: React.FC = () => {
     "Folha de SP": "#e91e63",
     Spotify: "#1DB954",
     Default: "#6366f1",
-  }
+  }), [])
 
   // Placeholder para dados de benchmark
   const benchmarkMetrics = {
@@ -236,7 +236,7 @@ const VisaoGeral: React.FC = () => {
     })
 
     return Object.values(metrics).sort((a, b) => b.impressions - a.impressions)
-  }, [filteredData])
+  }, [filteredData, platformColors])
 
   // Calcular totais
   const totals = useMemo(() => {

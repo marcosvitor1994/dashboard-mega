@@ -56,11 +56,11 @@ const LinhaTempo: React.FC = () => {
   const [selectedMetric, setSelectedMetric] = useState<
     "impressions" | "clicks" | "totalSpent" | "videoViews" | "cpm" | "cpc" | "ctr" | "vtr"
   >("impressions")
-  const [availablePracas, setAvailablePracas] = useState<string[]>([])
-  const [selectedPracas, setSelectedPracas] = useState<string[]>([])
+  const [, setAvailablePracas] = useState<string[]>([])
+  const [, setSelectedPracas] = useState<string[]>([])
 
   // Cores para diferentes plataformas/veículos
-  const platformColors: Record<string, string> = {
+  const platformColors: Record<string, string> = useMemo(() => ({
     TikTok: "#ff0050",
     LinkedIn: "#0077b5",
     Meta: "#0668E1",
@@ -73,7 +73,7 @@ const LinhaTempo: React.FC = () => {
     YouTube: "#ff0000",
     Pinterest: "#bd081c",
     Default: "#6366f1", // Cor padrão para veículos não mapeados
-  }
+  }), [])
 
   // Função para criar datas locais sem problemas de timezone
   const createLocalDate = (dateStr: string) => {
@@ -336,7 +336,7 @@ const LinhaTempo: React.FC = () => {
         color: platformColors[platform] || platformColors.Default,
       }))
       .sort((a, b) => new Date(a.firstDate).getTime() - new Date(b.firstDate).getTime())
-  }, [processedData])
+  }, [processedData, platformColors])
 
   // Calcular estatísticas
   const totalInvestment = useMemo(() => {

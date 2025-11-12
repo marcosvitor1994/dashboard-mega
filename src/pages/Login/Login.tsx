@@ -3,7 +3,6 @@
 import type React from "react"
 import { GoogleLogin } from "@react-oauth/google"
 import { useAuth } from "../../contexts/AuthContext"
-import { BarChart3 } from "lucide-react"
 
 const Login: React.FC = () => {
   const { login } = useAuth()

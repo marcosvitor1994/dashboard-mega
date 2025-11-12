@@ -276,6 +276,7 @@ const CreativeModal: React.FC<CreativeModalProps> = ({ creative, isOpen, onClose
                   <div className="relative w-full h-full">
                     <iframe
                       src={creative.mediaUrl}
+                      title={`Pinterest Pin - ${creative.adId}`}
                       className="w-full h-full"
                       frameBorder="0"
                       allow="autoplay; encrypted-media"

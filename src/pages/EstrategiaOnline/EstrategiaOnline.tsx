@@ -42,7 +42,7 @@ const EstrategiaOnline: React.FC = () => {
   const [vehicleData, setVehicleData] = useState<VehicleData[]>([])
   const [mesesTotals, setMesesTotals] = useState<MesTotals[]>([])
   const [selectedMes, setSelectedMes] = useState<string | null>(null)
-  const [availableMeses, setAvailableMeses] = useState<string[]>([])
+  const [, setAvailableMeses] = useState<string[]>([])
   const [campaignSummary, setCampaignSummary] = useState<CampaignSummary>({
     totalInvestimentoPrevisto: 0,
     totalCustoInvestido: 0,

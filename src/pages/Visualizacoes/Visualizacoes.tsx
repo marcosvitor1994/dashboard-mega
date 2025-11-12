@@ -67,7 +67,7 @@ const Visualizacoes: React.FC = () => {
   const [availablePracas, setAvailablePracas] = useState<string[]>([])
 
   // Cores para as plataformas (seguindo o modelo da imagem)
-  const platformColors: Record<string, string> = {
+  const platformColors: Record<string, string> = useMemo(() => ({
     YouTube: "#ff6b6b",
     TikTok: "#ff4757",
     Google: "#5f27cd",
@@ -83,7 +83,7 @@ const Visualizacoes: React.FC = () => {
     GDN: "#34A853",
     "Demand-Gen": "#EA4335",
     Default: "#6c5ce7",
-  }
+  }), [])
 
 
 

@@ -125,7 +125,6 @@ const TrafegoEngajamento: React.FC<TrafegoEngajamentoProps> = () => {
 
     // Índices das colunas
     const dateIndex = headers.indexOf("Date")
-    const campaignIndex = headers.indexOf("User campaign name")
     const sourceIndex = headers.indexOf("Session manual source")
     const sessionsIndex = headers.indexOf("Sessions")
 
@@ -683,7 +682,7 @@ const TrafegoEngajamento: React.FC<TrafegoEngajamentoProps> = () => {
         </div>
       </div>
 
-      /* Resumo dos CTAs */
+      {/* Resumo dos CTAs */}
     <div className="card-overlay rounded-lg shadow-lg p-6">
       <h3 className="text-lg font-semibold text-gray-900 mb-4">Resumo de Conversões (CTAs)</h3>
       

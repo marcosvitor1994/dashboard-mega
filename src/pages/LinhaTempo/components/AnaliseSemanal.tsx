@@ -94,7 +94,7 @@ const AnaliseSemanal: React.FC<AnaliseSemanalProps> = ({
   const [selectedMetric, setSelectedMetric] = useState<
     "impressions" | "clicks" | "views" | "cpm" | "cpc" | "cpv" | "ctr" | "vtr"
   >("impressions")
-  const [availablePracas, setAvailablePracas] = useState<string[]>([])
+  const [, setAvailablePracas] = useState<string[]>([])
   // Função para criar datas locais sem problemas de timezone
   const createLocalDate = (dateStr: string) => {
     if (!dateStr) return new Date()
