@@ -6,19 +6,7 @@ import { BarChart3, Calendar, Filter, MapPin } from "lucide-react"
 import { useConsolidadoNacionalData } from "../../services/api"
 import Loading from "../../components/Loading/Loading"
 
-// Interface for the raw API data
-interface ApiDataItem {
-  date?: string
-  platform?: string
-  campaignName?: string
-  impressions?: number
-  cost?: number
-  reach?: number
-  clicks?: number
-  frequency?: number
-  cpm?: number
-  praca?: string
-}
+
 
 interface ProcessedData {
   date: string
@@ -121,10 +109,7 @@ const VisaoGeral: React.FC = () => {
     })
   }
 
-  const validateAndReturnDate = (dateStr: string | undefined): string => {
-    if (!dateStr) return ""
-    return dateStr
-  }
+
 
   // Processar dados da API
   useEffect(() => {

@@ -146,7 +146,6 @@ const TrafegoEngajamento: React.FC<TrafegoEngajamentoProps> = () => {
 
       const sessions = Number.parseInt(row[sessionsIndex]) || 0
       const source = row[sourceIndex] || "Outros" // USAR SOURCE em vez de plataforma
-      const campaign = row[campaignIndex] || "(not set)"
 
       if (sessions > 0) {
         totalSessions += sessions

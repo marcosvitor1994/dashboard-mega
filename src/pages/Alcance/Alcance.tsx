@@ -44,8 +44,6 @@ const Alcance: React.FC = () => {
   const [dateRange, setDateRange] = useState<{ start: string; end: string }>({ start: "", end: "" })
   const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([])
   const [availablePlatforms, setAvailablePlatforms] = useState<string[]>([])
-  const [selectedPracas, setSelectedPracas] = useState<string[]>([])
-  const [availablePracas, setAvailablePracas] = useState<string[]>([])
 
   // Cores para as plataformas
   const platformColors: Record<string, string> = {

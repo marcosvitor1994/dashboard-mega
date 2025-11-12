@@ -220,27 +220,7 @@ const LinhaTempo: React.FC = () => {
     }
   }, [processedData, dateRange, selectedVehicles])
 
-  // Função para obter o valor da métrica de um item de dado
-  const getMetricValue = (item: DataPoint, metric: typeof selectedMetric): number => {
-    switch (metric) {
-      case "impressions":
-        return item.impressions || 0
-      case "clicks":
-        return item.clicks || 0
-      case "totalSpent":
-        return item.totalSpent || 0
-      case "videoViews":
-        return item.videoViews || item.videoCompletions || 0
-      // Para métricas compostas, retornamos os valores base para agregação posterior
-      case "cpm":
-      case "cpc":
-      case "ctr":
-      case "vtr":
-        return 0 // Será calculado na agregação
-      default:
-        return 0
-    }
-  }
+ 
 
   // Preparar dados para o gráfico
   const chartData: ChartData[] = useMemo(() => {
