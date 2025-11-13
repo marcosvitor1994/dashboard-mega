@@ -97,7 +97,7 @@ export const fetchResumoData = async () => {
 export const fetchEstrategiaOnlineData = async () => {
   try {
     const response = await apiNacional.get(
-      "/google/sheets/1eyj0PSNlZvvxnj9H0G0LM_jn2Ry4pSHACH2WwP7xUWw/data?range=Resumo",
+      "/google/sheets/1Vb24X8JB1nVEEnEoPyi9ZgMlTafVr46XBv1IBnN7z1E/data?range=Resumo",
     )
     return response.data
   } catch (error) {
@@ -906,7 +906,7 @@ export const useBenchmarkData = () => {
 export const fetchConsolidadoNacionalData = async () => {
   try {
     const response = await apiNacional.get(
-      "/google/sheets/1eyj0PSNlZvvxnj9H0G0LM_jn2Ry4pSHACH2WwP7xUWw/data?range=Consolidado",
+      "/google/sheets/1Vb24X8JB1nVEEnEoPyi9ZgMlTafVr46XBv1IBnN7z1E/data?range=Consolidado",
     )
     return response.data
   } catch (error) {
@@ -918,7 +918,7 @@ export const fetchConsolidadoNacionalData = async () => {
 export const fetchTikTokNacionalData = async () => {
   try {
     const response = await apiNacional.get(
-      "/google/sheets/1eyj0PSNlZvvxnj9H0G0LM_jn2Ry4pSHACH2WwP7xUWw/data?range=TikTok",
+      "/google/sheets/1Vb24X8JB1nVEEnEoPyi9ZgMlTafVr46XBv1IBnN7z1E/data?range=TikTok",
     )
     return response.data
   } catch (error) {
@@ -930,7 +930,7 @@ export const fetchTikTokNacionalData = async () => {
 export const fetchPinterestNacionalData = async () => {
   try {
     const response = await apiNacional.get(
-      "/google/sheets/1eyj0PSNlZvvxnj9H0G0LM_jn2Ry4pSHACH2WwP7xUWw/data?range=Pinterest",
+      "/google/sheets/1Vb24X8JB1nVEEnEoPyi9ZgMlTafVr46XBv1IBnN7z1E/data?range=Pinterest",
     )
     return response.data
   } catch (error) {
@@ -1019,7 +1019,7 @@ export const usePinterestNacionalData = () => {
 export const fetchMetaTratadoData = async () => {
   try {
     const response = await apiNacional.get(
-      "/google/sheets/1eyj0PSNlZvvxnj9H0G0LM_jn2Ry4pSHACH2WwP7xUWw/data?range=Meta%20-%20Tratado",
+      "/google/sheets/1Vb24X8JB1nVEEnEoPyi9ZgMlTafVr46XBv1IBnN7z1E/data?range=Meta%20-%20Tratado",
     )
     return response.data
   } catch (error) {
