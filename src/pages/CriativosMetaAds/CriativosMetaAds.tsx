@@ -38,7 +38,7 @@ const useMetaTratadoData = () => {
     try {
       setLoading(true)
       const response = await apiNacional.get(
-        "/google/sheets/1eyj0PSNlZvvxnj9H0G0LM_jn2Ry4pSHACH2WwP7xUWw/data?range=Meta%20-%20Tratado",
+        "/google/sheets/1Vb24X8JB1nVEEnEoPyi9ZgMlTafVr46XBv1IBnN7z1E/data?range=Meta%20-%20Tratado",
       )
       setData(response.data.data)
       setError(null)
